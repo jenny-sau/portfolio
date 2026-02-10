@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jenny Saucy – Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-name">&lt; Jenny /&gt;</div>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#project">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+  <main class="container">
+
+  <!-- INTRO -->
+  <section id="welcome-section">
+    <h1>Hi, I'm Jenny Saucy.</h1>
+    <p>
+      I’m a junior backend developer from Switzerland, self-taught and practice-driven.
+      I enjoy building reliable backend systems and turning complex requirements into clear, maintainable solutions.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About me</h2>
+      <p>
+      After exploring different academic and professional paths, I found my way into software development when I realized what truly motivates me: solving technical problems and understanding how systems work under real constraints.
+      </p>
+      <p>
+      I learn best by building. I enjoy designing clean REST APIs, modeling databases, and thinking about backend architecture and business rules. I like breaking down complex logic into simple, robust code.</p>
+      </p>
+      <p>
+      Technologies I have been working with include:
+      </p>
+      <p>
+      Python · FastAPI · SQLAlchemy · Pydantic · Pytest<br>
+      Alembic · PostgreSQL · SQLite
+      </p>
+
+
+      </p>
+      <p>
+        Outside of coding, I enjoy activities that balance focus and movement — you might find me at a yoga class, climbing at the gym, or even better, in nature.
+      </p>
+  </section>
+
+<!-- PROJECTS -->
+<section id="project">
+  <h2>My Projects</h2>
+
+  <!-- Café API Project -->
+  <div id="project-cafe" class="project-bg">
+    <div class="project-content">
+      <h3>API pour Café Manager</h3>
+
+      <p>
+        Café Manager is a backend API that simulates a café management game
+        with real-world business logic. Players manage inventory, fulfill
+        orders, and grow their café while the API enforces consistency
+        between states and business rules.
+      </p>
+
+      <ul>
+        <li>JWT authentication & role separation (admin / player)</li>
+        <li>Strict workflows and business rules</li>
+        <li>Atomic transactions & relational database design</li>
+        <li>Automated testing with Pytest</li>
+      </ul>
+
+      <p>
+        This project demonstrates my ability to design a robust, consistent,
+        and maintainable backend system.
+      </p>
+
+      <a
+  href="https://github.com/jenny-sau/cafe-manager"
+  target="_blank"
+  class="project-link"
+  aria-label="View Café Manager on GitHub"
+>
+  <i class="fab fa-github"></i>
+  View project on GitHub
+</a>
+    </div>
+
+    <img
+      src="assets/images/fastapi-bg.png"
+      alt="Café Manager API Swagger"
+      class="project-image"
+    />
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <a href="mailto:jenny.saucy@outlook.com" class="social-icon" aria-label="Email">
+      <i class="fas fa-envelope fa-2x"></i>
+    </a>
+
+    <a href="tel:+41797969910" class="social-icon" aria-label="Phone">
+      <i class="fas fa-phone fa-2x"></i>
+    </a>
+
+    <a
+      href="https://github.com/jenny-sau"
+      target="_blank"
+      class="social-icon"
+      aria-label="GitHub profile"
+    >
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+  </section>
+  </main>
+
+</body>
+</html>
