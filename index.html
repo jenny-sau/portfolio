@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Jenny Saucy – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Saucy – Backend Developer Portfolio</title>
 
   <link rel="stylesheet" href="styles.css" />
 
@@ -16,99 +17,136 @@
 <body>
 
   <!-- NAVBAR -->
-<nav id="navbar">
-  <div class="nav-name">&lt; Jenny /&gt;</div>
+  <nav id="navbar">
+    <div class="nav-name">&lt; Jenny /&gt;</div>
 
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#project">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <main class="container">
 
-  <!-- INTRO -->
-  <section id="welcome-section">
-    <h1>Hi, I'm Jenny Saucy.</h1>
-    <p>
-      I’m a junior backend developer from Switzerland, self-taught and practice-driven.
-      I enjoy building reliable backend systems and turning complex requirements into clear, maintainable solutions.
-    </p>
-  </section>
+    <!-- INTRO -->
+    <section id="welcome-section">
+      <h1>Hi, I'm Jenny Saucy.</h1>
+      <p>
+        I'm a <strong>backend developer from Switzerland</strong>, self-taught and practice-driven.
+        I build reliable REST APIs with clean architecture, focusing on business logic, 
+        data consistency, and maintainable code.
+      </p>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About me</h2>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
       <p>
-      After exploring different academic and professional paths, I found my way into software development when I realized what truly motivates me: solving technical problems and understanding how systems work under real constraints.
+        After exploring different paths, I found my calling in backend development 
+        when I realized what truly motivates me: <strong>solving technical problems 
+        and building systems that work under real constraints</strong>.
       </p>
       <p>
-      I learn best by building. I enjoy designing clean REST APIs, modeling databases, and thinking about backend architecture and business rules. I like breaking down complex logic into simple, robust code.</p>
+        I learn best by building. I've spent the last year mastering backend fundamentals 
+        through hands-on projects, focusing on REST APIs, database design, authentication, 
+        and testing. I enjoy turning complex business requirements into clean, robust code.
       </p>
-      <p>
-      Technologies I have been working with include:
-      </p>
-      <p>
-      Python · FastAPI · SQLAlchemy · Pydantic · Pytest<br>
-      Alembic · PostgreSQL · SQLite
-      </p>
+      
+      <div class="tech-stack">
+        <h3>Technologies I work with:</h3>
+        <p>
+          <strong>Backend:</strong> Python · FastAPI · SQLAlchemy · Pydantic<br>
+          <strong>Database:</strong> PostgreSQL · SQLite · Alembic<br>
+          <strong>Testing & Tools:</strong> Pytest · Docker · JWT · REST APIs
+        </p>
+      </div>
 
-
-      </p>
       <p>
         Outside of coding, I enjoy activities that balance focus and movement — you might find me at a yoga class, climbing at the gym, or even better, in nature.
       </p>
-  </section>
+    </section>
 
-<!-- PROJECTS -->
-<section id="project">
-  <h2>My Projects</h2>
+  <!-- Café Manager Project -->
+<div id="work">
 
-  <!-- Café API Project -->
-  <div id="project-cafe" class="project-bg">
-    <div class="project-content">
-      <h3>API pour Café Manager</h3>
+<div id="project-cafe" class="project-bg">
+  <div class="project-content">
+    <h3>Café Manager API</h3>
 
-      <p>
-        Café Manager is a backend API that simulates a café management game
-        with real-world business logic. Players manage inventory, fulfill
-        orders, and grow their café while the API enforces consistency
-        between states and business rules.
-      </p>
+    <p>
+      A REST API backend for a café management game where players manage inventory, 
+      serve customer orders, and track their progress. Built as a learning project 
+      to understand backend development fundamentals.
+    </p>
 
-      <ul>
-        <li>JWT authentication & role separation (admin / player)</li>
-        <li>Strict workflows and business rules</li>
-        <li>Atomic transactions & relational database design</li>
-        <li>Automated testing with Pytest</li>
-      </ul>
+    <h4>Core Features:</h4>
+    <ul>
+      <li><strong>Authentication & Authorization:</strong> JWT tokens with role-based access (admin/player)</li>
+      <li><strong>Business Logic:</strong> Inventory management, order workflows with status validation (PENDING → COMPLETED/CANCELLED)</li>
+      <li><strong>Error Handling:</strong> Try/except blocks with database rollback to maintain data consistency</li>
+      <li><strong>Testing:</strong> Automated tests with Pytest covering authentication, permissions, and business logic</li>
+      <li><strong>Documentation:</strong> Auto-generated API docs with Swagger UI, comprehensive README</li>
+    </ul>
 
-      <p>
-        This project demonstrates my ability to design a robust, consistent,
-        and maintainable backend system.
-      </p>
+    <h4>What I Focused On:</h4>
+    <ul class="challenges">
+      <li>
+        <strong>Data consistency:</strong> Ensuring stock and money updates happen together 
+        with proper error handling
+      </li>
+      <li>
+        <strong>Access control:</strong> Players can only manage their own orders and inventory, 
+        admins have full access
+      </li>
+      <li>
+        <strong>Code organization:</strong> Separating business logic, validation, and API routes 
+        for better maintainability
+      </li>
+    </ul>
 
+    <div class="project-links">
       <a
-  href="https://github.com/jenny-sau/cafe-manager"
-  target="_blank"
-  class="project-link"
-  aria-label="View Café Manager on GitHub"
->
-  <i class="fab fa-github"></i>
-  View project on GitHub
-</a>
+        href="https://github.com/jenny-sau/cafe-manager"
+        target="_blank"
+        class="btn-primary"
+        aria-label="View Café Manager on GitHub"
+      >
+        <i class="fab fa-github"></i> View project on GitHub
+      </a>
+      
     </div>
 
-    <img
-      src="assets/images/fastapi-bg.png"
-      alt="Café Manager API Swagger"
-      class="project-image"
-    />
+    <div class="tech-used">
+      <span class="tech-badge">FastAPI</span>
+      <span class="tech-badge">PostgreSQL</span>
+      <span class="tech-badge">SQLAlchemy</span>
+      <span class="tech-badge">JWT</span>
+      <span class="tech-badge">Pytest</span>
+      <span class="tech-badge">Docker</span>
+    </div>
   </div>
-</section>
 
+  <img
+    src="assets/images/fastapi-bg.png"
+    alt="Café Manager API Swagger interface showing endpoints"
+    class="project-image"
+  />
+</div>
 
-  <!-- CONTACT -->
+<!-- What I Learned Section -->
+<div class="learning-section">
+  <h3>Key Takeaways:</h3>
+  <ul>
+    <li>How to structure a REST API with authentication and role-based permissions</li>
+    <li>The importance of validating business rules before modifying database state</li>
+    <li>Writing tests that verify both success cases and error scenarios</li>
+    <li>Database modeling with relationships (one-to-many, foreign keys)</li>
+  </ul>
+</div>
+</div>
+    <!-- CONTACT -->
+   <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
 
@@ -130,6 +168,11 @@
     </a>
   </section>
   </main>
+
+
+  <footer>
+    <p>&copy; 2026 Jenny Saucy</p>
+  </footer>
 
 </body>
 </html>
