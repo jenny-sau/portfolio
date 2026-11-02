@@ -12,19 +12,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   >
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3946GXQQ4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C3946GXQQ4');
-</script>
 </head>
-  
+
 <body>
 
   <!-- NAVBAR -->
@@ -42,118 +31,171 @@
 
     <!-- INTRO -->
     <section id="welcome-section">
-      <h1>Hi, I'm Jenny Saucy.</h1>
+      <h1>Hi, I'm Jenny :) </h1>
       <p>
-        I'm a <strong>backend developer from Switzerland</strong>, self-taught and practice-driven.
-        I build reliable REST APIs with clean architecture, focusing on business logic, 
-        data consistency, and maintainable code.
+        I'm a developer based in Switzerland.
       </p>
+        <!-- Photo mobile uniquement -->
+    <div class="mobile-intro-image">
+      <img src="assets/images/photo_portfolio.png" alt="Jenny Saucy" />
+    </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About me</h2>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About me</h2>
+  
+  <div class="about-wrapper">
+    <div class="about-image">
+      <img src="assets/images/photo_portfolio.png" alt="Jenny Saucy" />
+    </div>
+    
+    <div class="about-text">
       <p>
-        I come from an unusual mix — business studies and psychology. That's exactly what drew me to backend development: building systems that work under real constraints, for real people.
+        I love learning new things and building things from scratch. That's what drew me to programming: the opportunity to keep learning, experiment, and bring ideas to life.
       </p>
+
       <p>
-        I learn best by building. I've spent the last year mastering backend fundamentals 
-        through hands-on projects, focusing on REST APIs, database design, authentication, 
-        and testing. I enjoy turning complex business requirements into clean, robust code.
+        Over the past year, I've been developing my skills through hands-on projects, working with Python, JavaScript, APIs, databases, and more.
+      </p>
+
+      <p>
+        I enjoy figuring out how things work, turning ideas into practical solutions, and constantly learning something new.  
       </p>
       
       <div class="tech-stack">
         <h3>Technologies I work with:</h3>
         <p>
-          <strong>Backend:</strong> Python · FastAPI · SQLAlchemy · Pydantic<br>
-          <strong>Database:</strong> PostgreSQL · SQLite · Alembic<br>
-          <strong>Testing & Tools:</strong> Pytest · Docker · JWT · REST APIs
+  <strong>Languages:</strong> Python · JavaScript<br>
+  <strong>Backend:</strong> FastAPI · SQLAlchemy · Pydantic<br>
+  <strong>Databases & Migrations:</strong> PostgreSQL · SQLite · Alembic<br>
+  <strong>Testing & Tools:</strong> Pytest · Docker · JWT · Git
         </p>
       </div>
 
       <p>
-        Outside of coding, I enjoy activities that balance focus and movement — you might find me at a yoga class, climbing at the gym, or even better, in nature.
+        Outside of coding, you might find me climbing at the gym — or even better, outdoors! ;)
       </p>
-    </section>
-
-  <!-- Café Manager Project -->
-<div id="work">
-
-<div id="project-cafe" class="project-bg">
-  <div class="project-content">
-    <h3>Café Manager API</h3>
-
-    <p>
-      A REST API backend for a café management game where players manage inventory, 
-      serve customer orders, and track their progress. Built as a learning project 
-      to understand backend development fundamentals.
-    </p>
-
-    <h4>Core Features:</h4>
-    <ul>
-      <li><strong>Authentication & Authorization:</strong> JWT tokens with role-based access (admin/player)</li>
-      <li><strong>Business Logic:</strong> Inventory management, order workflows with status validation (PENDING → COMPLETED/CANCELLED)</li>
-      <li><strong>Error Handling:</strong> Try/except blocks with database rollback to maintain data consistency</li>
-      <li><strong>Testing:</strong> Automated tests with Pytest covering authentication, permissions, and business logic</li>
-      <li><strong>Documentation:</strong> Auto-generated API docs with Swagger UI, comprehensive README</li>
-    </ul>
-
-    <h4>What I Focused On:</h4>
-    <ul class="challenges">
-      <li>
-        <strong>Data consistency:</strong> Ensuring stock and money updates happen together 
-        with proper error handling
-      </li>
-      <li>
-        <strong>Access control:</strong> Players can only manage their own orders and inventory, 
-        admins have full access
-      </li>
-      <li>
-        <strong>Code organization:</strong> Separating business logic, validation, and API routes 
-        for better maintainability
-      </li>
-    </ul>
-
-    <div class="project-links">
-      <a
-        href="https://github.com/jenny-sau/cafe-manager"
-        target="_blank"
-        class="btn-primary"
-        aria-label="View Café Manager on GitHub"
-      >
-        <i class="fab fa-github"></i> View project on GitHub
-      </a>
-      
-    </div>
-
-    <div class="tech-used">
-      <span class="tech-badge">FastAPI</span>
-      <span class="tech-badge">PostgreSQL</span>
-      <span class="tech-badge">SQLAlchemy</span>
-      <span class="tech-badge">JWT</span>
-      <span class="tech-badge">Pytest</span>
-      <span class="tech-badge">Docker</span>
     </div>
   </div>
+</section>
 
-  <img
-    src="assets/images/fastapi-bg.png"
-    alt="Café Manager API Swagger interface showing endpoints"
-    class="project-image"
-  />
-</div>
+<!-- WORK -->
+<section id="work">
+  <h2>My work</h2>
 
-<!-- What I Learned Section -->
-<div class="learning-section">
-  <h3>Key Takeaways:</h3>
-  <ul>
-    <li>How to structure a REST API with authentication and role-based permissions</li>
-    <li>The importance of validating business rules before modifying database state</li>
-    <li>Writing tests that verify both success cases and error scenarios</li>
-    <li>Database modeling with relationships (one-to-many, foreign keys)</li>
-  </ul>
-</div>
-</div>
+  <div class="projects-slider">
+
+    <!-- PROJECT 1 -->
+    <div class="project-slide">
+
+      <div id="project-cafe" class="project-bg">
+
+        <div class="project-content">
+          <h3>Café Manager API</h3>
+
+          <p>
+            A REST API backend for a café management game where players manage inventory,
+            serve customer orders, and track their progress.
+          </p>
+
+          <h4>Core Features:</h4>
+          <ul>
+            <li><strong>Authentication:</strong> JWT tokens with role-based access</li>
+            <li><strong>Business Logic:</strong> Inventory management and order workflow</li>
+            <li><strong>Error Handling:</strong> Database rollback to maintain data consistency</li>
+            <li><strong>Testing:</strong> Automated tests with Pytest</li>
+            <li><strong>Documentation:</strong> Swagger UI documentation</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/jenny-sau/cafe-manager" target="_blank" class="btn-primary">
+              <i class="fab fa-github"></i> View project on GitHub
+            </a>
+          </div>
+
+          <div class="tech-used">
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">SQLAlchemy</span>
+            <span class="tech-badge">JWT</span>
+            <span class="tech-badge">Pytest</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+        </div>
+
+        <img
+          src="assets/images/fastapi-bg.png"
+          alt="Café Manager API interface"
+          class="project-image"
+        />
+
+      </div>
+    </div>
+
+
+    <!-- PROJECT 2 -->
+    <div class="project-slide">
+
+      <div id="project-mastermind" class="project-bg">
+
+        <div class="project-content">
+          <h3>MasterMind</h3>
+
+          <p>
+            A fullstack web game — REST API with FastAPI connected to a vanilla
+            JavaScript frontend.
+          </p>
+
+          <h4>Core Features:</h4>
+          <ul>
+            <li><strong>Authentication:</strong> Secure signup and login</li>
+            <li><strong>Game Logic:</strong> Three difficulty levels</li>
+            <li><strong>Scoring System:</strong> Dynamic score calculation</li>
+            <li><strong>Testing:</strong> 30 automated tests</li>
+            <li><strong>Deployment:</strong> Railway backend + Netlify frontend</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/jenny-sau/mastermind-api" target="_blank" class="btn-primary">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+
+            <a href="https://mastermind.jenny-dev.com" target="_blank" class="btn-primary">
+              Play :)
+            </a>
+
+            <a href="https://web-production-75841.up.railway.app/docs" target="_blank" class="btn-primary">
+              <i class="fas fa-book"></i> API Docs
+            </a>
+          </div>
+
+          <div class="tech-used">
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">SQLAlchemy</span>
+            <span class="tech-badge">JWT</span>
+            <span class="tech-badge">Pytest</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Vanilla JS</span>
+            <span class="tech-badge">Netlify</span>
+          </div>
+        </div>
+
+        <img
+          src="assets/images/mastermind-bg.png"
+          alt="MasterMind game interface"
+          class="project-image"
+        />
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <!-- CONTACT -->
    <!-- CONTACT -->
   <section id="contact">
@@ -182,6 +224,6 @@
   <footer>
     <p>&copy; 2026 Jenny Saucy</p>
   </footer>
-
+<script src="slider.js"></script>
 </body>
 </html>
